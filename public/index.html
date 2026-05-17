@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DevConnect</h1>
+        <p>Vagas e cursos em um só lugar</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Cadastro</h2>
+            <input type="text" id="registerName" placeholder="Nome">
+            <input type="email" id="registerEmail" placeholder="Email">
+            <input type="password" id="registerPassword" placeholder="Senha">
+            <button onclick="register()">Cadastrar</button>
+        </section>
+
+        <section class="card">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Senha">
+            <button onclick="login()">Entrar</button>
+        </section>
+
+        <section class="card">
+            <h2>Vagas</h2>
+            <div id="jobs"></div>
+        </section>
+
+        <section class="card">
+            <h2>Cursos</h2>
+            <div id="courses"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
